@@ -1,0 +1,113 @@
+<%= render partial: 'layouts/home_navigation' %>
+
+<div class="section-splash">
+  <div class="hero-div">
+    <div class="splash-container w-container">
+      <div class="hero-content">
+        <h1>Improving long-term care<br>through empathy</h1>
+        <p class="grey-paragraph">Our journalists capture the life stories of aging loved ones in long-term care to benefit care providers</p>
+        <%= link_to 'For caregivers', home_for_caregivers_path, class: 'large w-button yellow-button' %>
+        <%= link_to 'For families', home_for_families_path, class: 'large w-button yellow-button' %>
+        <%= link_to 'See sample stories', home_samples_path, class: 'see-stories-link' %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-how-it-works">
+  <div class="how-it-works-div">
+    <h2 class="line-h2"><span class="h2-span">How it works</span></h2>
+    <div class="how-it-works-row w-row">
+      <div class="how-it-works-column w-clearfix w-col w-col-4 w-col-stack"><%= image_tag('home-how-it-works-1.svg') %>
+        <h3 class="title">1. Capture life story</h3>
+        <p class="grey-paragraph how-it-works-text small">Our digital toolkit makes it simple to capture the life story information that caregivers need. Pre-formatted and easily customized.</p>
+      </div>
+      <div class="how-it-works-column w-clearfix w-col w-col-4 w-col-stack"><%= image_tag('home-how-it-works-2.svg') %>
+
+        <h3 class="title">2. Share with caregivers</h3>
+        <p class="grey-paragraph how-it-works-text small">Our beautiful digital stories are easy tools that empower caregivers to understand the core of who your loved one is, spark meaningful conversations with them and soothe them with music.</p>
+      </div>
+      <div class="how-it-works-column w-clearfix w-col w-col-4 w-col-stack"><%= image_tag('home-how-it-works-3.svg') %>
+
+        <h3 class="title">3. Enhance family visits</h3>
+        <p class="grey-paragraph how-it-works-text small">Use our digital stories to reminisce with important photos and anecdotes, dance with personalized music selections, and make conversations with nursing staff more productive.</p>
+      </div>
+    </div>
+    <%= link_to 'get started', home_samples_path, class: 'large w-button yellow-button' %>
+  </div>
+</div>
+<div class="section-save-time">
+  <div class="simple-section-container w-container">
+    <div class="left-div-box">
+      <h2 class="left-h2">Save time</h2>
+      <p class="grey-paragraph statistic-paragraph">MemoryWell saves time for care providers and families by doing the valuable but time-consuming life-story work for them and making it conveniently accessible.</p>
+    </div><%= image_tag('save-time.png', width: 200, height: 300, class: 'flower-set') %>
+  </div>
+</div>
+<div class="section-summary">
+  <div class="about-section-container w-container">
+    <p class="centered grey-paragraph">With the mission of <span class="summary">improving care through empathy</span>, we help families share their loved one's life story with their caregivers. Featuring secure privacy protection, on-demand support from professional journalists and simple, affordable pricing, families and caregivers love MemoryWell. We know because they tell us every day.</p>
+  </div>
+</div>
+<div class="section-pricing">
+  <div class="simple-section-container w-container">
+    <div class="left-div-box">
+      <h2 class="left-h2">Flexible pricing.</h2>
+      <p class="grey-paragraph statistic-paragraph">Two affordable options available: Create your own elegant, digital stories, or let our experienced journalists beautifully craft your story.</p>
+    </div><%= image_tag('flower_set.jpg', width: 200, class: 'flower-set') %>
+
+  </div>
+</div>
+<div class="section-privacy">
+  <div class="simple-section-container w-container">
+    <div class="left-div-box">
+      <h2 class="left-h2">Safe &amp; secure.</h2>
+      <p class="grey-paragraph statistic-paragraph">Your family's privacy is always protected, your loved one's stories are always respected. Manage privacy settings easily and share only with whom you choose.</p>
+    </div><%= image_tag('succulent.png', width: 200, class: 'flower-set') %>
+
+  </div>
+</div>
+<div class="section-map">
+  <div class="statistic-container w-container">
+    <h2 class="left-h2">Approximately <span class="yellow-statistic">5.4 million</span> Americans currently live with Alzheimer's disease.*</h2>
+    <p class="grey-paragraph statistic-paragraph">Memory-based therapy improves communication and promotes psychosocial well-being. MemoryWell is here to help.</p>
+    <p class="source">*Source: The Alzheimer's Association</p>
+    <%= link_to 'get started', home_samples_path, class: 'large w-button yellow-button' %>
+  </div>
+</div>
+<div class="section-testimonials">
+  <div class="w-container">
+    <h2>People love MemoryWell.</h2>
+    <div class="testimonials w-clearfix">
+      <div class="left-testimonial w-clearfix"><%= image_tag('chicago.jpg', height: 72, width: 72, class: 'left-image-quote') %>
+        <div class="quote-box-and-karet">
+          <div class="left-karet"></div>
+          <div class="left-quote-box">
+            <p class="grey-paragraph quote-text">"It turned out beautiful. The staff loved seeing the old pictures and learning things about my mom that they didn’t know before!"</p>
+            <p class="author grey-paragraph quote-text">Heather, daughter of a resident in a Chicago dementia-care unit</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-testimonial w-clearfix"><%= image_tag('quote_concord.png', height: 72, width: 72, class: 'right-image-quote') %>
+
+        <div class="quote-box-and-karet right">
+          <div class="right-karet"></div>
+          <div class="right-quote-box">
+            <p class="grey-paragraph quote-text">"I show the MemoryWell to Chris, and she gets a kick out of it. She loves looking through the photos and seeing the stories."</p>
+            <p class="author grey-paragraph quote-text">Amy, caregiver for a resident of a dementia-care unit</p>
+          </div>
+        </div>
+      </div>
+      <div class="left-testimonial w-clearfix"><%= image_tag('new york.jpg', height: 72, width: 72, class: 'left-image-quote') %>
+        <div class="quote-box-and-karet">
+          <div class="left-karet"></div>
+          <div class="left-quote-box">
+            <p class="grey-paragraph quote-text">"When my father was diagnosed with Alzheimer's, I never expected technology to save a lot of heartache for my family. MemoryWell helps us tell my father's story to all of his caregivers and ensures he gets the personalized care he needs."</p>
+            <p class="author grey-paragraph quote-text">Ralph, son of a resident in a New York senior living center</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render partial: 'layouts/home_footer' %>

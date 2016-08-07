@@ -1,0 +1,32 @@
+<div class="section-footer">
+  <div class="footer-container w-container">
+    <div class="footer-main-div">
+      <div class="right-footer">
+        <div class="footer-row w-row">
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="grey-paragraph quote-text small-footer-text">Care</p>
+            <%= link_to 'Explore', home_samples_path, class: 'footer-link' %>
+            <%= link_to 'For Families', home_for_families_path, class: 'footer-link' %>
+            <%= link_to 'For Caregivers', home_for_caregivers_path, class: 'footer-link' %>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="grey-paragraph quote-text small-footer-text">About us</p>
+            <%= link_to 'About', home_about_us_path, class: 'footer-link' %>
+            <%= link_to 'Contact', home_for_caregivers_path, class: 'footer-link' %>
+          </div>
+        </div>
+      </div><a class="logo w-nav-brand" href="#"><h1 class="logo">MemoryWell<span class="yellow">.</span></h1></a>
+    </div>
+    <div class="copyright-div">
+      <div class="footer-copyright-left">
+        <p class="copyright-text grey-paragraph quote-text">© 2016 MemoryWell LLC. All Rights Reserved.</p>
+        <p class="copyright-text grey-paragraph privacy-links quote-text">
+          <%= link_to 'Terms of Use', home_samples_path, class: 'privacy-link', target: '_blank' %>
+        </p>
+        <p class="copyright-text grey-paragraph privacy-links quote-text">
+          <%= link_to 'Privacy Policy', home_samples_path, class: 'privacy-link', target: '_blank' %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

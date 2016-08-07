@@ -1,0 +1,58 @@
+<%= render partial: 'layouts/home_navigation' %>
+
+<div class="section-for-families">
+  <div class="about-us-links w-container"><a class="abt-link" href="#story">our story</a><a class="abt-link" href="#bios">team bios</a>
+  </div>
+  <div class="w-container">
+    <div class="note-div" id="story">
+      <div class="note-body w-clearfix">
+        <h2 class="for-header founder-letter">Better care for loved ones<br>starts by sharing their story</h2>
+        <p class="grey-paragraph left-align letter">Moving my dad into long-term Alzheimer’s care was one of the hardest days of my life. And in the months and years that followed I was desperate to find better ways to ensure his nursing staff understood him like I did. None of his homes offered me any tools to provide a better experience for him when I was away.
+          <br>
+          <br>MemoryWell grew out of that experience. As a journalist, I wrote his story down. His caregivers loved it because now they could understand my father so much better, and soothe him in tense moments by recalling for him family names or poignant details about his life. His near-daily rages subsided, and he got along better with his nurses. Capturing his story made all of that possible.
+          <br>
+          <br>There are so many stories out there that we are losing every day. Our web-based platform makes your loved one's stories and favorite digital photos, music, and videos easily available to you and to their caregivers no matter where you are - a menu of stimulating engagement tools.
+          <br>
+          <br><a class="plain-link" href="storywell/graham-newton-small.html">Here's the story</a> I wrote for him that transformed his care. We're eager to chronicle your loved one's life and hear their unique story. Alzheimer's and dementia care communities can be isolating places for residents, for caregivers and for family. We aim to change that one story at a time.</p>
+        <div class="small-hr-left"></div>
+        <div class="note-attribution-div">
+          <div class="right-text-attribution w-clearfix">
+            <%= image_tag '732002388010305220716.png', class: 'signature' %>
+            <p class="attribution grey-paragraph left-align">
+              <%= link_to 'Jay Newton-Small', 'mailto:jay@memory-well.com?subject=Hi%20Jay!', class: 'attribution-link' %>, Co-Founder of MemoryWell
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashed-hr"></div>
+  <div class="w-container who-we-are">
+    <div class="note-div" id="bios">
+      <div class="note-body">
+        <h2 class="for-header founder-letter no-margin-bottom">Who we are</h2>
+        <h3 class="who-we-are-sub-header">Journalists, caregivers, sons &amp; daughters</h3>
+        <div class="founder-row w-row">
+          <div class="w-col w-col-3">
+            <%= image_tag 'JayNewton-Small.jpg', class: 'about-us-profile-image', width: 140, height: 140 %>
+          </div>
+          <div class="w-col w-col-9">
+            <p class="bold-name grey-paragraph">Jay Newton-Small, Co-Founder</p>
+            <p class="grey-paragraph left-align letter">Jay has been a national journalist for more than 15 years, writing for TIME Magazine and Bloomberg News. When her father moved into an assisted living facility, the staff asked her to fill out a 20-page questionnaire about his life. Instead, she wrote down his story. His caregivers loved it, and MemoryWell was born.</p>
+          </div>
+        </div>
+        <div class="founder-row w-row">
+          <div class="w-col w-col-3">
+            <%= image_tag 'ilan_brat-linkedin_grey.jpg', class: 'about-us-profile-image', width: 140, height: 140 %>
+          </div>
+          <div class="w-col w-col-9">
+            <p class="bold-name grey-paragraph">Ilan Brat, Co-Founder</p>
+            <p class="grey-paragraph left-align letter">Ilan worked for 11 years as a journalist at The Wall Street Journal in the U.S. and in Spain. He was drawn to MemoryWell from its outset for the same reason he became a journalist: to surface the importance of every individual.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render partial: 'layouts/home_footer' %>

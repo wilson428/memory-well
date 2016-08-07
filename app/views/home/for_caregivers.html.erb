@@ -1,0 +1,44 @@
+<%= render partial: 'layouts/home_navigation' %>
+
+<div class="section-for-families">
+  <div class="w-container">
+    <div class="note-div">
+      <div class="note-header orange-header">
+        <h2 class="for-header orange">Tools that empower caregivers<br>to provide compassionate, empathic&nbsp;care</h2>
+      </div>
+      <div class="note-body">
+        <h3 class="for-h3 orange-h3">Relationship-based care is better care</h3>
+        <p class="grey-paragraph left-align">Hearing and understanding the unique life experiences of residents empowers caregivers to personalize their care and anticipate needs. More so than photo albums and lengthy social history forms—vivid life stories connect caregiver and residents. We capture these stories and curate them on a simple to use online platform, making resident transitions smoother and building genuine relationships.</p>
+        <h3 class="for-h3 orange-h3">simple tools, rewarding impact</h3>
+        <p class="grey-paragraph left-align">We've designed MemoryWell to make connecting with residents easy.</p>
+        <ul class="for-list w-list-unstyled">
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">New-resident admission becomes faster and smoother for staff and families because we do the work for you of collecting valuable social-history information. Residents better adapt to new environments when staff understand them more deeply.</p>
+            </div>
+          </li>
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">Generate more positive interactions with residents’ families when &nbsp;you know their stories.</p>
+            </div>
+          </li>
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">Facilitate person-centered care for your most-challenging residents by harnessing our music and other digital-engagement tools, and leverage family wisdom about what keeps their loved ones most at ease and comfortable.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="call-to-action orange-call">Call us to learn more about Caregiver Services<br><span class="phone-number">(773) 442-2769</span></h2>
+      <p class="centered grey-paragraph">or</p><%= link_to 'get started', home_about_us_path, class: 'large small-margin-top w-button yellow-button' %>
+    </div>
+  </div>
+</div>
+
+<%= render partial: 'layouts/home_footer' %>

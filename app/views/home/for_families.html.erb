@@ -1,0 +1,51 @@
+<%= render partial: 'layouts/home_navigation' %>
+
+<div class="section-for-families">
+  <div class="w-container">
+    <div class="note-div">
+      <div class="note-header">
+        <h2 class="for-header">Personalize care for<br>loved ones with dementia</h2>
+      </div>
+      <div class="note-body">
+        <h3 class="for-h3">Your loved one deserves the best care—Let us help</h3>
+        <p class="grey-paragraph left-align">We understand the challenges families face when professional caregivers are taking care of their loved ones at home or in care communities. When a loved one can't share their story, families worry that staff members may not treat their loved ones like a person with a unique history, personality, and interests. We step in and provide a simple, online platform to craft and share your loved one's story with caregivers.</p>
+        <h3 class="for-h3">on demand professional support</h3>
+        <p class="grey-paragraph left-align">Our professional journalists are skilled storytellers and sensitive interviewers. They teach families how to tell the most meaningful stories for their loved one’s care, and they can also draw out rich anecdotes from family members and weave them into beautiful narratives about their loved ones. We make comforting storytelling comfortable.</p>
+        <ul class="for-list w-list-unstyled">
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">A personalized consultation with our veteran journalists eases your family’s path to creating a cherished, digital life story for your loved one.</p>
+            </div>
+          </li>
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">Our simple storytelling templates enable your family to focus on the most important things your loved one’s caregivers need to understand.</p>
+            </div>
+          </li>
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">Professional editors bring a deft touch to making your stories powerful, so they resonate with caregivers and help them understand your loved one almost as well as you do.</p>
+            </div>
+          </li>
+          <li class="list-item w-clearfix">
+            <div class="check-div"><%= image_tag 'check.png', class: 'check-image', width: 25 %>
+            </div>
+            <div class="list-text">
+              <p class="grey-paragraph left-align">Save time by providing new staff members caring for your loved one their existing digital story. You’ll never have to re-introduce new nurses to your family member again.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="call-to-action">Call us to learn more about Family Services<br><span class="phone-number">(773) 442-2769</span></h2>
+      <p class="centered grey-paragraph">or</p><%= link_to 'get started', home_about_us_path, class: 'large small-margin-top w-button yellow-button' %>
+    </div>
+  </div>
+</div>
+
+<%= render partial: 'layouts/home_footer' %>
