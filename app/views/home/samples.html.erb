@@ -1,2 +1,39 @@
-<h1>Home#samples</h1>
-<p>Find me in app/views/home/samples.html.erb</p>
+<%= render partial: 'layouts/home_navigation' %>
+
+<div class="section-explore">
+  <div class="explore-container w-container">
+    <h2 class="for-header">Sample MemoryWells</h2>
+
+    <div class="sample-stories w-row">
+      <div class="w-col w-col-6">
+        <%= link_to graham_newton_small_path, class: 'sample-block w-inline-block' do %>
+          <%= image_tag 'grahamnewtonsmall.jpg', class: 'sample-story-img', width: 250, height: 250 %>
+          <h3>Graham Newton-Small</h3>
+        <% end %>
+      </div>
+      <div class="w-col w-col-6">
+        <%= link_to mary_daly_path, class: 'sample-block w-inline-block' do %>
+          <%= image_tag 'Mary_Sharon.jpg', class: 'sample-story-img', width: 250, height: 250 %>
+          <h3>Mary Daly</h3>
+        <% end %>
+      </div>
+    </div>
+    <div class="sample-stories w-row">
+      <div class="w-col w-col-6">
+        <%= link_to charline_tyler_path, class: 'sample-block w-inline-block' do %>
+          <%= image_tag 'chris_tyler_w_husband_percy_party.JPG', class: 'sample-story-img', width: 250, height: 250 %>
+          <h3>Charline Tyler</h3>
+        <% end %>
+      </div>
+      <div class="w-col w-col-6">
+        <%= link_to liz_ross_path, class: 'sample-block w-inline-block' do %>
+          <%= image_tag 'circle_liz_hawaii.jpg', class: 'sample-story-img', width: 250, height: 250 %>
+          <h3>Liz Ross</h3>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= render partial: 'layouts/home_footer' %>
