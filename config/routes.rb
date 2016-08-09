@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   get 'home/samples'
   get 'home/about_us'
   get 'home/get_started'
+  get 'home/thank_you'
+
+  # Download links
+  get 'home/download_privacy'
+  get 'home/download_terms'
 
   # Story well pages
   get 'story-wells/graham-newton-small', to: 'story_wells#graham_newton_small', as: 'graham_newton_small'

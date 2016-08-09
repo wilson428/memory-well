@@ -1,2 +1,43 @@
-<h1>Home#get_started</h1>
-<p>Find me in app/views/home/get_started.html.erb</p>
+<body class="tanbody">
+  <div class="navigation telephone-nav w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+    <div class="navigation-div w-clearfix">
+      <%= link_to root_path, class: 'logo w-nav-brand' do %>
+        <h1 class="logo">MemoryWell<span class="yellow">.</span></h1>
+      <% end %>
+      <div class="right-navigation-block w-clearfix">
+        <nav class="navigation-menu-left w-nav-menu" role="navigation"><a class="nav-link w-nav-link" href="tel:+17734422769">TEL:&nbsp;(773) 442 2769</a>
+        </nav>
+      </div>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="plain-page-scroll section-for-families">
+    <div class="w-container">
+      <div class="note-div">
+        <div class="note-header">
+          <h2 class="for-header">Your info</h2>
+          <h3>Please send us a brief message and our advisor will contact you</h3>
+        </div>
+        <div class="note-body">
+          <div class="w-form">
+            <form class="contact-form" data-name="Email Form" data-redirect="/home/thank_you" id="email-form" name="email-form">
+              <input class="contact-field w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Full Name (First and Last)" type="text">
+              <input class="contact-field w-input" data-name="Phone" id="Phone" maxlength="256" name="Phone" placeholder="Phone, e.g. (555) 555-5555" type="text">
+              <input class="contact-field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Email" required="required" type="email">
+              <input class="large w-button yellow-button" data-wait="Please wait..." type="submit" value="Next">
+            </form>
+            <div class="w-form-done">
+              <div>Our experts are reviewing your information and will call soon.</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
