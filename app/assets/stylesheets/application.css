@@ -14,6 +14,18 @@
  *= require_self
  */
 
+.yellow-button.x-large {
+  width: 350px;
+  height: 50px;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding-right: 28px;
+  padding-left: 28px;
+  font-size: 1.1rem;
+  line-height: 50px;
+  text-align: center;
+}
 
 /* CUSTOM CSS */
 
@@ -213,19 +225,6 @@ strong {
 
 .yellow-button.large {
   width: 235px;
-  height: 50px;
-  margin-top: 40px;
-  margin-right: 10px;
-  margin-left: 0px;
-  padding-right: 28px;
-  padding-left: 28px;
-  font-size: 1.1rem;
-  line-height: 50px;
-  text-align: center;
-}
-
-.yellow-button.x-large {
-  width: 350px;
   height: 50px;
   margin-top: 40px;
   margin-right: 10px;
@@ -1559,6 +1558,7 @@ strong {
     font-size: 34px;
   }
   .navigation.small-nav {
+    height: auto;
     background-color: #fff;
   }
   .logo {
@@ -1567,8 +1567,17 @@ strong {
     margin-left: auto;
     float: left;
   }
+  .logo.w--current {
+    float: left;
+  }
   .logo.small-logo.m-only {
     display: block;
+  }
+  .logo.story-well-logo {
+    position: static;
+    display: inline-block;
+    float: none;
+    text-align: center;
   }
   .navigation-menu-left {
     margin-right: 0px;
@@ -1576,8 +1585,11 @@ strong {
     background-color: #40374b;
   }
   .navigation-menu-left.profile-navigation-right {
-    position: relative;
-    display: inline-block;
+    position: static;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
     clear: none;
     background-color: transparent;
   }
@@ -1604,6 +1616,7 @@ strong {
     background-color: transparent;
   }
   .nav-link.profile-nav-link {
+    position: relative;
     padding-left: 8px;
   }
   .nav-link.profile-nav-link.w--current {
@@ -1625,10 +1638,14 @@ strong {
     padding-left: 15px;
   }
   .right-navigation-block {
-    display: inline-block;
+    display: block;
     margin-right: auto;
     margin-left: auto;
-    float: right;
+    float: left;
+    text-align: center;
+  }
+  .right-navigation-block.right-nav-block-storywell {
+    float: none;
   }
   .about-section-container {
     padding-right: 15px;
@@ -1729,8 +1746,12 @@ strong {
     padding-right: 0px;
   }
   .navigation-div.small-nav-div {
+    position: static;
+    display: block;
     padding-right: 5px;
     padding-left: 5px;
+    float: none;
+    text-align: center;
   }
   .section-footer {
     text-align: center;
@@ -1766,6 +1787,7 @@ strong {
     padding-left: 20px;
   }
   .section-profile-splash {
+    margin-top: 100px;
     padding-top: 30px;
   }
   .profile-photo-border {
